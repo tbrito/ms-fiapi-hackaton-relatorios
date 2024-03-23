@@ -27,6 +27,7 @@ jobs:
           path: build/libs
 
   build-and-deploy:
+    needs: build-app
     runs-on: ubuntu-latest
     steps:
     # checkout the repo
